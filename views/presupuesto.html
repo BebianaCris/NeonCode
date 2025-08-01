@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto | Mi Empresa</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="../img/Neon.png" alt="Logo NeonCode">
+            <h3>Bienvenido a NeonCode</h3>
+            <p>Potenciamos tu marca con soluciones web creativas y funcionales.</p>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="presupuesto.html" class="activo">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Solicita tu Presupuesto</h1>
+        <form id="formulario">
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <label class="campo-formulario">Nombre: <input type="text" id="nombre" required></label>
+                <label class="campo-formulario">Apellidos: <input type="text" id="apellidos" required></label>
+                <label class="campo-formulario">Teléfono: <input type="text" id="telefono" required></label>
+                <label class="campo-formulario">Email: <input type="email" id="email" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Configuración del presupuesto</legend>
+                <label class="campo-formulario">Producto:
+                  <select id="producto">
+                   <option value="300" >Web Básica - 300€</option>
+                   <option value="500" >Tienda Online - 500€</option>
+                   <option value="800">Web a medida - 800€</option>
+                  </select>
+                </label>
+
+                <label class="campo-formulario">Plazo (días): <input type="number" id="plazo" min="1" max="365" value="30"></label>
+                <p>Extras:</p>
+                <label class="campo-formulario"><input type="checkbox" class="extra" value="50"> Hosting (50€)</label>
+                <label class="campo-formulario"><input type="checkbox" class="extra" value="80"> SEO avanzado (80€)</label>
+                <label class="campo-formulario"><input type="checkbox" class="extra" value="100"> Mantenimiento anual (100€)</label>
+
+                <p><strong>Presupuesto estimado: <span id="total">0</span> €</strong></p>
+
+                <label class="campo-formulario"><input type="checkbox" id="condiciones" required> Acepto las condiciones</label>
+                <button type="submit">Enviar</button>
+                <button type="reset">Reiniciar</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 NeonCode. Todos los derechos reservados.</p>
+        <p>📍 Madrid, España</p>
+        <div class="social-icons">
+            <img src="../img/facebook.png" alt="Facebook">
+            <img src="../img/twitter.png" alt="Twitter">
+            <img src="../img/instagram.png" alt="Instagram">
+        </div>
+    </footer>
+
+    <script src="../js/presupuesto.js"></script>
+</body>
+
+</html>
