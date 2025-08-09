@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links .activo {
+    font-weight: bold;
+    border-bottom: 2px solid yellow;
+}
+
+main {
+  margin-top: 10px;
+}
+
+main section {
+    padding: 2em;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9rem;
+}
+
+.social-icons img {
+    width: 24px;
+    margin: 0 5px;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    padding: 1em;
+}
+
+.grid-galeria img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.grid-galeria img:hover {
+    transform: scale(1.05);
+}
+
+form fieldset {
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0;
+}
+
+header {
+    background-color: #0f0f1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #7a00ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a64bff;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section:nth-child(even) {
+    background-color: #eef1ff;
+}
+
+h2 {
+    color: #0f0f1a;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #6200ea;
+}
+
+.campo-formulario {
+    padding-bottom: 20px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fade 1s forwards;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+#mapa {
+  width: 100%;
+  max-width: 650px;
+  height: 575px;
+  margin-bottom: 20px;
+}
+
+#ruta {
+  width: 100%;
+  max-width: 650px;
+  margin-bottom: 20px;
+}
+
+.inputs-direcciones {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.img{
+  width: 100%;
+  height: auto;
+}

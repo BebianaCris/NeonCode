@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Mi Empresa</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="../img/Neon.png" alt="Logo NeonCode">
+            <h3>Bienvenido a NeonCode</h3>
+            <p>Potenciamos tu marca con soluciones web creativas y funcionales.</p>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contacto</h1>
+        <section class="info-contacto">
+            <h2>Nuestra Ubicación</h2>
+            <p><strong>Dirección:</strong> Calle Falsa 123, Madrid, España</p>
+            <p><strong>Teléfono:</strong> +34 123 456 789</p>
+            <p><strong>Email:</strong> contacto@neoncode.com</p>
+        </section>
+        <section>
+           <div id="mapa"></div>
+
+            <div class="inputs-direcciones">
+             <label for="partida">Partida:</label>
+             <input id="partida" type="text" placeholder="Ej: Calle A, Ciudad" />
+    
+             <label for="destino">Destino:</label>
+             <input id="destino" type="text" placeholder="Ej: Calle B, Ciudad" />
+    
+              <input type="button" value="Calcular Ruta" onclick="calcularRuta()" />
+            </div>
+
+           <div id="ruta"></div>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 NeonCode. Todos los derechos reservados.</p>
+        <p>📍 Madrid, España</p>
+        <div class="social-icons">
+            <img src="../img/facebook.png" alt="Facebook">
+            <img src="../img/twitter.png" alt="Twitter">
+            <img src="../img/instagram.png" alt="Instagram">
+        </div>
+    </footer>
+
+    <script src="../js/contacto.js"></script>
+    <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2GuMSRVXQzcKZxLb98dkuHPIDPhLw09c&callback=iniciarMapa">
+    </script>
+    
+</body>
+
+</html>
